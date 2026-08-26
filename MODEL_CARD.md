@@ -20,6 +20,8 @@ finetuned_from: distilbert-base-uncased
 
 Fine-tuned DistilBERT for detecting payment-term mismatches in invoices.
 
+**GitHub**: [Sick0stro/FinDocs-Verify](https://github.com/Sick0stro/FinDocs-Verify)
+
 ## Training Data
 
 Proprietary dataset of receipt documents. Binary classification:

@@ -22,7 +22,7 @@ Fine-tuned DistilBERT for detecting payment-term mismatches in invoices.
 
 ## Training Data
 
-632 receipt documents from a proprietary dataset. Binary classification:
+Proprietary dataset of receipt documents. Binary classification:
 - **0** = Clean invoice (no mismatch)
 - **1** = Mismatch detected (quantity × unit price ≠ total, etc.)
 

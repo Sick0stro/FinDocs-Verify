@@ -2,6 +2,8 @@
 
 Fine-tuned DistilBERT model for detecting payment-term mismatches in invoices. Trained on a small proprietary dataset of 632 receipt documents.
 
+**Model**: [Sickostro/FinDocs-Verify](https://huggingface.co/Sickostro/FinDocs-Verify) on HuggingFace
+
 ## Results
 
 ![Training vs Validation Loss](artifacts/loss_curve.png)
@@ -32,6 +34,12 @@ make train     # Fine-tune DistilBERT (GPU: ~43s, CPU: ~15min)
 make eval      # Benchmark on held-out set
 make test      # Run tests
 make serve     # Start API on :8000
+```
+
+Or download the pre-trained model:
+
+```bash
+huggingface-cli download Sickostro/FinDocs-Verify --local-dir models/invoice_classifier_epoch10
 ```
 
 ## API

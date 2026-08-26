@@ -26,8 +26,6 @@ Fine-tuned DistilBERT for detecting payment-term mismatches in invoices.
 - **0** = Clean invoice (no mismatch)
 - **1** = Mismatch detected (quantity × unit price ≠ total, etc.)
 
-241 records have empty text fields — model trains on the remaining 391 non-empty records.
-
 ## Training
 
 - **Base model**: `distilbert-base-uncased`
@@ -89,8 +87,7 @@ Response:
 
 ## Limitations
 
-- Trained on a small proprietary dataset (632 docs, 391 with text)
-- 38% of training records have empty text fields
+- Trained on a small proprietary dataset
 - Precision is moderate (61.5%) — some false positives on clean invoices
 - DistilBERT has limited context window (512 tokens)
 

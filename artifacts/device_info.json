@@ -1,0 +1,7 @@
+{
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.12.0+cu126",
+  "model": "distilbert-base-uncased",
+  "seed": 42
+}

@@ -1,0 +1,30 @@
+# Model checkpoints (intermediate, not final)
+models/checkpoint-*/
+models/checkpoints/
+
+# Trained model (267MB — train locally with: make train)
+models/invoice_classifier_epoch10/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# MLflow tracking (local SQLite + artifacts — regenerate via mlflow ui)
+mlflow.db
+mlruns/
+
+# Benchmark checkpoints (reproducible via scripts)
+artifacts/.compare_checkpoint.json
+artifacts/mlflow_run_id.txt
+
+# Large files handled via Git LFS
+# (see .gitattributes for patterns)

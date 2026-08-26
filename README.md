@@ -6,7 +6,7 @@ Fine-tuned DistilBERT model for detecting payment-term mismatches in invoices. T
 
 ![Training vs Validation Loss](artifacts/loss_curve.png)
 
-### Benchmark Metrics (63 held-out test documents)
+### Benchmark Metrics
 
 | Metric | Value |
 |--------|-------|
@@ -19,8 +19,8 @@ Fine-tuned DistilBERT model for detecting payment-term mismatches in invoices. T
 
 | Model | Precision | Recall | F1 |
 |-------|-----------|--------|-----|
-| Untrained (random) | 25.4% | 100% | 40.5% |
-| **10 epochs** | **61.5%** | **100%** | **76.2%** |
+| DistilBERT (base) | 25.4% | 100% | 40.5% |
+| **Ours** | **61.5%** | **100%** | **76.2%** |
 
 +35.7pp F1 improvement. 100% recall — every discrepancy in the test set is caught.
 

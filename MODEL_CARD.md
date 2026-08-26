@@ -36,14 +36,14 @@ Proprietary dataset of receipt documents. Binary classification:
 - **Training time**: ~43 seconds
 - **Early stopping**: patience=2 on eval_loss
 
-## Results (63 held-out test documents)
+## Results
 
-| Metric | Value |
-|--------|-------|
-| Precision | 61.54% |
-| Recall | 100.00% |
-| F1-Score | 76.19% |
-| Accuracy | 84.13% |
+![Training vs Validation Loss](loss_curve.png)
+
+| Model | Precision | Recall | F1 |
+|-------|-----------|--------|-----|
+| DistilBERT (base) | 25.4% | 100% | 40.5% |
+| **Ours** | **61.5%** | **100%** | **76.2%** |
 
 Confusion matrix: TN=37, TP=16, FN=0, FP=10
 

@@ -4,6 +4,8 @@ Fine-tuned DistilBERT model for detecting payment-term mismatches in invoices. T
 
 ## Results
 
+![Training vs Validation Loss](artifacts/loss_curve.png)
+
 ### Benchmark Metrics (63 held-out test documents)
 
 | Metric | Value |

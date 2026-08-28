@@ -1,4 +1,4 @@
-# FinDocs-Verify — ML Pipeline Project
+# FinDocs-Verify 
 
 > **Note**: This model is trained on **Arabic-language** receipt/invoice documents.
 

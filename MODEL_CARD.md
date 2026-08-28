@@ -1,10 +1,13 @@
 ---
-language: en
+language:
+- ar
+- en
 tags:
 - invoice-mismatch
 - distilbert
 - text-classification
 - financial-compliance
+- arabic
 metrics:
 - precision
 - recall
@@ -18,13 +21,13 @@ finetuned_from: distilbert-base-uncased
 
 # FinDocs-Verify
 
-Fine-tuned DistilBERT for detecting payment-term mismatches in invoices.
+Fine-tuned DistilBERT for detecting payment-term mismatches in **Arabic-language** invoices and receipts.
 
 **GitHub**: [Sick0stro/FinDocs-Verify](https://github.com/Sick0stro/FinDocs-Verify)
 
 ## Training Data
 
-Proprietary dataset of receipt documents. Binary classification:
+Proprietary dataset of 632 Arabic receipt documents. Binary classification:
 - **0** = Clean invoice (no mismatch)
 - **1** = Mismatch detected (quantity × unit price ≠ total, etc.)
 
@@ -89,7 +92,7 @@ Response:
 
 ## Limitations
 
-- Trained on a small proprietary dataset
+- Trained on a small proprietary dataset of Arabic receipts
 - Precision is moderate (61.5%) — some false positives on clean invoices
 - DistilBERT has limited context window (512 tokens)
 

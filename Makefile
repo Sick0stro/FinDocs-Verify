@@ -1,6 +1,8 @@
-.PHONY: train eval test serve all clean
+.PHONY: train eval test serve compare all clean pipeline-stages
 
-PYTHON ?= python
+# Use sam_env Python (has CUDA + torch for GPU acceleration)
+PYTHON ?= /c/Users/mutaw/miniconda3/envs/sam_env/python.exe
+export PYTHONPATH :=
 
 train:
 	$(PYTHON) src/train.py
@@ -16,6 +18,11 @@ test:
 
 serve:
 	$(PYTHON) src/serve.py
+
+# Pipeline stages for WasteFlow Document AI
+pipeline-stages:
+	$(PYTHON) stages/1_pdf_to_png.py
+	$(PYTHON) stages/2_layoutlmv3_train.py
 
 all: train eval test
 
